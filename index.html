@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/landing-page.css">
+    <title>Aku Dan Provinsiku | Landing Page</title>
+    <link rel="icon" href="./icon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="button-mainpage">
+        <img class="logo" src="./images/logo.png" alt="">
+        <div class="button">
+            <a href="./home.html">Go To Homepage</a>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="content home active">
+            <h4>
+                <span>AKU DAN PROVINSIKU</span><span><i>PAPUA BARAT</i></span>
+            </h4>
+        </div>
+        <div class="content raja-ampat">
+            <h4>
+                <span>Kepulauan</span><span><i>RAJA AMPAT</i></span>
+            </h4>
+            <p>Raja Ampat adalah sebuah gugusan pulau yang terletak di ujung barat laut Papua, Indonesia. Keindahan alam bawah lautnya yang spektakuler, dengan terumbu karang yang kaya akan kehidupan laut dan beragam spesies ikan. Pulau-pulau di Raja Ampat juga menawarkan pantai berpasir putih yang memesona dan hutan hujan tropis yang belum tersentuh. Tempat ini sering dianggap sebagai surganya para penyelam dan pecinta alam.</p>
+        </div>
+        <div class="content teluk-cenderawasih">
+            <h4>
+                <span>Teluk</span><span><i>Cenderawasih</i></span>
+            </h4>
+            <p>Teluk Cenderawasih adalah salah satu dari keajaiban alam yang tak terlupakan di Papua Barat. Teluk ini menawarkan pemandangan laut yang spektakuler dan kehidupan bawah laut yang kaya akan keanekaragaman biota. Salah satu ciri khasnya adalah interaksi unik dengan lumba-lumba paus, yang sering kali bisa ditemui berenang bebas di perairannya yang tenang.</p>
+        </div>
+        <div class="content budaya-papua">
+            <h4>
+                <span>Budaya</span><span><i>YANG UNIK</i></span>
+            </h4>
+            <p>Budaya Papua Barat tercermin dalam keragaman seni, musik, tarian, serta kepercayaan dan adat istiadat yang kaya akan makna. Salah satu aspek unik dari budaya Papua Barat adalah warisan budaya yang diwariskan secara turun-temurun, yang tetap hidup dan dijunjung tinggi oleh generasi muda.</p>
+        </div>
+        <div class="content rumah-honai">
+            <h4>
+                <span>Rumah</span><span><i>HONAI</i></span>
+            </h4>
+            <p>
+                Rumah Honai adalah rumah tradisional bulat atau setengah bulat dengan atap jerami atau daun sagu. Terbuat dari anyaman bambu atau kayu, dengan pintu masuk kecil. Di dalamnya terdapat tungku api. Sering digunakan oleh suku-suku asli di Papua Barat seperti suku Dani, Lani, dan Yali, sebagai simbol kebersamaan dan persatuan.</p>
+        </div>
+
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item" onClick="changeBg('bg-home.jpg', 'home');">
+                    <img src="./images/home.jpg" alt="">
+                </div>
+                <div class="carousel-item" onClick="changeBg('bg-raja-ampat.jpg', 'raja-ampat');">
+                    <img src="./images/raja-ampat.jpg" alt="">
+                </div>
+                <div class="carousel-item" onClick="changeBg('bg-teluk-cenderawasih.jpg', 'teluk-cenderawasih');">
+                    <img src="./images/teluk-cenderawasih.jpg" alt="">
+                </div>
+                <div class="carousel-item" onClick="changeBg('bg-budaya-papua.jpg', 'budaya-papua');">
+                    <img src="./images/budaya-papua.jpg" alt="">
+                </div>
+                <div class="carousel-item" onClick="changeBg('bg-rumah-honai.jpg', 'rumah-honai');">
+                    <img src="./images/rumah-honai.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="play" onClick="toggleVideo();"><i class="fa fa-play-circle-o" aria-hidden="true"></i>Tonton Video</a>
+    </div>
+
+    <div class="trailer">
+        <iframe id="youtube-player" src="https://www.youtube.com/embed/yb-M_bwfA9U" frameborder="0" allowfullscreen></iframe>
+        <img src="./images/close.png" alt="" class="close" onClick="toggleVideo();">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
